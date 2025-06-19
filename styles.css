@@ -1,0 +1,147 @@
+:root {
+    --primary-color: #007bff;
+    --accent-color: #00bfff;
+    --dark-color: #001f3f;
+    --light-color: #f8f9fa;
+    --text-color: #212529;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-color);
+    color: var(--text-color);
+    scroll-behavior: smooth;
+  }
+  
+  /* Navigace */
+  .navbar {
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  .nav-link.active {
+    color: var(--primary-color) !important;
+    font-weight: 600;
+  }
+  
+  /* Hero sekce */
+  .hero-section {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.55), 
+      rgba(0, 0, 0, 0.55)
+    ), url('assets/img/hero.jpg') center/cover no-repeat;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  
+  /* CTA tlačítko */
+  .btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+  }
+  .btn-primary:hover {
+    background-color: var(--accent-color);
+  }
+  
+  /* Karty služeb a ceníku */
+  .card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card ul li {
+    padding: 0.5rem 0;
+    font-size: 1.05rem;
+  }
+  .card ul li span {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+  }
+  
+  /* Sekce - animace */
+  section {
+    padding: 60px 0;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+  }
+  section.reveal {
+    opacity: 1;
+    transform: none;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--text-color);
+    color: white;
+  }
+  
+  /* Galerie */
+  img.img-fluid {
+    border-radius: 10px;
+  }
+
+  #treninky img {
+    transition: transform 0.3s ease;
+  }
+  #treninky img:hover {
+    transform: scale(1.03);
+  }
+
+  #hriste img {
+    transition: transform 0.3s ease;
+  }
+  #hriste img:hover {
+    transform: scale(1.03);
+  }
+  
+  #cenik .card {
+    transition: transform 0.3s ease;
+  }
+  
+  #cenik .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  #cenik .card-body {
+    padding: 3rem 1rem;
+  }
+  #contact .form-label {
+    font-weight: 600;
+  }
+  
+  #contact .form-control {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  #contact .btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+  }
+  
+  #contact .btn-primary:hover {
+    background-color: var(--accent-color);
+  }
+
+  section {
+    padding-top: 70px; /* Umožníme, aby sekce nezačínaly pod navigací */
+    padding-bottom: 60px;
+  }
+  
+  #akademie, #treninky, #trenery, #hriste, #cenik, #contact {
+    padding-top: 80px; /* Umožníme posun pro lepší rozpoznání ScrollSpy */
+  }

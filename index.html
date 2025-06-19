@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Sports & Football Academy</title>
+	<link rel="icon" type="image/svg+xml" href="assets/pruhlednypng.png">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+	<!-- Bootstrap 5 -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+	<!-- Vlastní CSS -->
+	<link rel="stylesheet" href="styles.css" />
+	<!-- Lightbox2 CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
+
+	<!-- Navigace -->
+	<nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm" data-bs-spy="scroll"
+		data-bs-target="#navbar" data-bs-offset="70">
+		<div class="container">
+			<a class="navbar-brand fw-bold text-dark" href="#">
+				<img class="me-2" src="assets/pruhlednypng.png" alt="Logo" width="48" height="48">
+				Football & Sports Trainings
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item"><a class="nav-link active" href="#akademie">Akademie</a></li>
+					<li class="nav-item"><a class="nav-link" href="#treninky">Tréninky</a></li>
+					<li class="nav-item"><a class="nav-link" href="#treneri">Trenéři</a></li>
+					<li class="nav-item"><a class="nav-link" href="#hriste">Hřiště</a></li>
+					<li class="nav-item"><a class="nav-link" href="#cenik">Ceník</a></li>
+					<li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Hero -->
+	<header id="hero" class="position-relative" style="height: 85vh; overflow: hidden;">
+		<!-- Carousel na pozadí -->
+		<div id="heroCarousel" class="carousel slide carousel-fade h-100" data-bs-ride="carousel">
+			<div class="carousel-inner h-100">
+				<div class="carousel-item active h-100">
+					<img src="assets/carousel-item1.jpg" class="d-block w-100 h-100" style="object-fit: cover;"
+						alt="Trénink 1">
+				</div>
+				<div class="carousel-item h-100">
+					<img src="assets/carousel-item2.jpg" class="d-block w-100 h-100" style="object-fit: cover;"
+						alt="Trénink 2">
+				</div>
+				<div class="carousel-item h-100">
+					<img src="assets/carousel-item3.jpg" class="d-block w-100 h-100" style="object-fit: cover;"
+						alt="Trénink 3">
+				</div>
+			</div>
+		</div>
+
+		<!-- Fullscreen tmavý overlay -->
+		<div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.7); z-index: 1;"></div>
+
+		<!-- Text přes overlay -->
+		<div class="position-absolute top-50 start-50 translate-middle text-center text-white" style="z-index: 2;">
+			<h1 class="display-4 fw-bold">Osobní fotbaloví trenéři pro děti</h1>
+			<p class="lead">Rozvíjíme potenciál mladých hráčů moderním a individuálním přístupem.</p>
+			<a href="#contact" class="btn btn-primary btn-lg mt-3">Rezervuj trénink</a>
+		</div>
+	</header>
+
+
+	<!-- Sekce: Akademie -->
+	<section id="akademie" class="bg-light">
+		<div class="container">
+			<h2 class="text-center mb-5">Akademie</h2>
+
+			<div class="row mb-4">
+				<div class="col-lg-8 mx-auto">
+					<p class="lead text-center">
+						Naší misí je vést děti k lásce k pohybu, týmové spolupráci a osobnímu rozvoji.
+						Fotbal bereme jako nástroj, jak formovat charakter, odpovědnost a radost ze hry.
+					</p>
+				</div>
+			</div>
+
+			<div class="row justify-content-center">
+				<div class="col-lg-10">
+					<div class="card p-4 shadow-sm text-center">
+						<h4 class="mb-3 text-primary">Desatero mladého hráče</h4>
+						<ul class="list-unstyled row row-cols-1 row-cols-md-2 ps-5">
+							<li class="d-flex"><span class="me-2">⚽</span> Hraji fair play.</li>
+							<li class="d-flex"><span class="me-2">🧠</span> Poslouchám a učím se.</li>
+							<li class="d-flex"><span class="me-2">🤝</span> Respektuji trenéry i spoluhráče.</li>
+							<li class="d-flex"><span class="me-2">🔥</span> Dávám do tréninku maximum.</li>
+							<li class="d-flex"><span class="me-2">🎯</span> Mám cíl a pracuji na něm.</li>
+							<li class="d-flex"><span class="me-2">👟</span> Připravuji si výbavu a přicházím včas.</li>
+							<li class="d-flex"><span class="me-2">📚</span> Učím se nejen na hřišti.</li>
+							<li class="d-flex"><span class="me-2">🧼</span> Dbám na hygienu a pořádek.</li>
+							<li class="d-flex"><span class="me-2">💬</span> Mluvím s respektem.</li>
+							<li class="d-flex"><span class="me-2">😊</span> Bavím se hrou!</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Sekce: Tréninky -->
+	<section id="treninky" class="bg-light">
+		<div class="container">
+			<h2 class="text-center mb-5">Tréninky</h2>
+
+			<!-- Fotogalerie tréninků -->
+			<div class="row justify-content-center g-4">
+				<!-- Obrázek 1 -->
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<a href="assets/carousel-item1.jpg" data-lightbox="galerie" data-title="Trénink – technika">
+						<img src="assets/carousel-item1.jpg" loading="lazy" class="img-fluid rounded shadow-sm h-100"
+							alt="trénink 1">
+					</a>
+				</div>
+
+				<!-- Obrázek 2 -->
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<a href="assets/carousel-item2.jpg" data-lightbox="galerie" data-title="Trénink – rychlost">
+						<img src="assets/carousel-item2.jpg" loading="lazy" class="img-fluid rounded shadow-sm h-100"
+							alt="trénink 2">
+					</a>
+				</div>
+
+				<!-- Obrázek 3 -->
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<a href="assets/carousel-item3.jpg" data-lightbox="galerie" data-title="Trénink – týmová hra">
+						<img src="assets/carousel-item3.jpg" loading="lazy" class="img-fluid rounded shadow-sm h-100"
+							alt="trénink 3">
+					</a>
+				</div>
+
+				<!-- Obrázek 4 -->
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<a href="assets/carousel-item1.jpg" data-lightbox="galerie" data-title="Trénink – práce s míčem">
+						<img src="assets/carousel-item1.jpg" loading="lazy" class="img-fluid rounded shadow-sm h-100"
+							alt="trénink 4">
+					</a>
+				</div>
+
+				<!-- Obrázek 5 -->
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<a href="assets/carousel-item2.jpg" data-lightbox="galerie" data-title="Trénink – obratnost">
+						<img src="assets/carousel-item2.jpg" loading="lazy" class="img-fluid rounded shadow-sm h-100"
+							alt="trénink 5">
+					</a>
+				</div>
+
+				<!-- Obrázek 6 -->
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<a href="assets/carousel-item3.jpg" data-lightbox="galerie" data-title="Trénink – koncentrace">
+						<img src="assets/carousel-item3.jpg" loading="lazy" class="img-fluid rounded shadow-sm h-100"
+							alt="trénink 6">
+					</a>
+				</div>
+			</div>
+
+			<!-- Videa z tréninků -->
+			<div class="row justify-content-center mt-5">
+				<h5 class="text-center mb-4">Ukázky tréninků ve videích</h5>
+
+				<!-- Video 1 -->
+				<div class="col-md-6 col-lg-3 mb-4">
+					<div class="ratio ratio-16x9 rounded shadow-sm">
+						<video controls>
+							<source src="assets/videos/Fotbal1.mp4" type="video/mp4">
+							Váš prohlížeč nepodporuje přehrávání videa.
+						</video>
+					</div>
+				</div>
+
+				<!-- Video 2 -->
+				<div class="col-md-6 col-lg-3 mb-4">
+					<div class="ratio ratio-16x9 rounded shadow-sm">
+						<video controls>
+							<source src="assets/videos/Fotbal2.mp4" type="video/mp4">
+							Váš prohlížeč nepodporuje přehrávání videa.
+						</video>
+					</div>
+				</div>
+
+				<!-- Video 3 -->
+				<div class="col-md-6 col-lg-3 mb-4">
+					<div class="ratio ratio-16x9 rounded shadow-sm">
+						<video controls>
+							<source src="assets/videos/Fotbal3.mp4" type="video/mp4">
+							Váš prohlížeč nepodporuje přehrávání videa.
+						</video>
+					</div>
+				</div>
+
+				<!-- Video 4 -->
+				<div class="col-md-6 col-lg-3 mb-4">
+					<div class="ratio ratio-16x9 rounded shadow-sm">
+						<video controls>
+							<source src="assets/videos/Fotbal4.mp4" type="video/mp4">
+							Váš prohlížeč nepodporuje přehrávání videa.
+						</video>
+					</div>
+				</div>
+
+				<!-- Video 5 -->
+				<div class="col-md-6 col-lg-3 mb-4">
+					<div class="ratio ratio-16x9 rounded shadow-sm">
+						<video controls>
+							<source src="assets/videos/Fotbal5.mp4" type="video/mp4">
+							Váš prohlížeč nepodporuje přehrávání videa.
+						</video>
+					</div>
+				</div>
+			</div>
+
+	</section>
+
+	<!-- Sekce: Trenéři -->
+	<section id="treneri">
+		<div class="container">
+			<h2 class="text-center mb-5">Náš trenérský tým</h2>
+
+			<div class="row justify-content-center g-4">
+				<!-- Trenér 1 -->
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="card text-center h-100 shadow-sm">
+						<img src="assets/profilovka.jpg" class="card-img-top rounded-top" alt="trenér Jan Vacík">
+						<div class="card-body">
+							<h5 class="card-title mb-1">Jan Vacík</h5>
+							<p class="text-muted small mb-2">Hlavní trenér, FAČR B licence</p>
+							<p class="card-text">10+ let zkušeností s trénováním mládeže, specializace na individuální
+								rozvoj.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Trenér 2 -->
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="card text-center h-100 shadow-sm">
+						<img src="assets/profilovka.jpg" class="card-img-top rounded-top" alt="trenér Petr Novák">
+						<div class="card-body">
+							<h5 class="card-title mb-1">Petr Novák</h5>
+							<p class="text-muted small mb-2">Asistent, mentální kouč</p>
+							<p class="card-text">Zaměřuje se na práci s psychikou, motivací a komunikací mladých hráčů.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Další trenéři dle potřeby -->
+			</div>
+		</div>
+	</section>
+
+	<!-- Sekce: Hřiště -->
+	<section id="hriste" class="bg-light py-5">
+		<div class="container">
+			<h2 class="text-center mb-5">Tréninková hřiště</h2>
+
+			<div class="row justify-content-center g-4">
+				<!-- Hřiště 1 -->
+				<div class="col-md-6 col-lg-4">
+					<div class="card shadow-sm h-100">
+						<img src="assets/hriste.jpg" class="card-img-top rounded-top" alt="Hřiště - Sportovní areál">
+						<div class="card-body">
+							<h5 class="card-title">FC Písek</h5>
+							<p class="card-text">Velké hřiště s přírodní trávou a plně vybavenými tréninkovými zónami.
+							</p>
+							<p class="text-muted small">Adresa: Burketova 303, 397 01 Písek 1</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Hřiště 2 -->
+				<div class="col-md-6 col-lg-4">
+					<div class="card shadow-sm h-100">
+						<img src="assets/hriste.jpg" class="card-img-top rounded-top" alt="Hřiště - Akademie Praha">
+						<div class="card-body">
+							<h5 class="card-title">TJ Hradiště</h5>
+							<p class="card-text">Velké hřiště s přírodní trávou a plně vybavenými tréninkovými zónami.
+							</p>
+							<p class="text-muted small">Adresa: Na Rozhledně 307/21, 397 01 Písek 1-Hradiště</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Další hřiště podle potřeby -->
+
+				<!-- Mapy -->
+				<div class="row justify-content-center mt-5">
+					<div class="col-md-8 col-lg-6">
+						<div class="ratio ratio-16x9">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4301.631400000552!2d14.135602800000001!3d49.30857349999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b4f8eb919acf5%3A0xe959fbc74cae7646!2zRkMgUMOtc2Vr!5e1!3m2!1scs!2scz!4v1746384570570!5m2!1scs!2scz"
+								width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade">
+							</iframe>
+						</div>
+					</div>
+
+					<div class="col-md-8 col-lg-6 mt-4 mt-md-0">
+						<div class="ratio ratio-16x9">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4302.392878631326!2d14.1251189!3d49.2998516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b4f99fc529089%3A0x51c9a9a4078029e4!2zVEogSHJhZGnFoXTEmw!5e1!3m2!1scs!2scz!4v1746384496128!5m2!1scs!2scz"
+								width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade">
+							</iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+
+
+	<!-- Sekce: Ceník -->
+	<section id="cenik" class="bg-light">
+		<div class="container">
+			<h2 class="text-center mb-5">Ceník</h2>
+
+			<div class="row justify-content-center g-4">
+				<!-- Jedna osoba -->
+				<div class="col-md-4">
+					<div class="card text-center shadow-sm h-100">
+						<div class="card-body">
+							<h5 class="card-title mb-4">1 osoba</h5>
+							<p class="display-6 fw-bold text-primary">500 Kč</p>
+							<p class="text-muted">Jednorázová lekce – 60 minut</p>
+							<a href="#contact" class="btn btn-primary mt-3">Rezervovat</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- 2 a více osob -->
+				<div class="col-md-4">
+					<div class="card text-center shadow-sm h-100 border-primary border-2">
+						<div class="card-body">
+							<h5 class="card-title mb-4">2 a více osob</h5>
+							<p class="display-6 fw-bold text-primary">1000 Kč</p>
+							<p class="text-muted">Cenově výhodné</p>
+							<a href="#contact" class="btn btn-primary mt-3">Rezervovat</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Balíček 10 tréninků -->
+				<div class="col-md-4">
+					<div class="card text-center shadow-sm h-100">
+						<div class="card-body">
+							<h5 class="card-title mb-4">Individuální domluva</h5>
+							<p class="display-6 fw-bold text-primary">?</p>
+							<p class="text-muted">Cenově výhodné – platnost 3 měsíce</p>
+							<a href="#contact" class="btn btn-primary mt-3">Rezervovat</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Sekce: Kontakt -->
+	<section id="contact" class="bg-light">
+		<div class="container">
+			<h2 class="text-center mb-5">Kontaktujte mě</h2>
+
+			<div class="row justify-content-center">
+				<div class="col-md-8 col-lg-6">
+					<!-- Formulář -->
+					<form action="https://formspree.io/f/xblognwg" method="POST">
+						<div class="mb-3">
+							<label for="name" class="form-label">Jméno</label>
+							<input type="text" class="form-control" id="name" name="name" required />
+						</div>
+						<div class="mb-3">
+							<label for="phone" class="form-label">Tel. číslo</label>
+							<input type="phone" class="form-control" id="phone" name="phone" required />
+						</div>
+						<div class="mb-3">
+							<label for="email" class="form-label">E-mail</label>
+							<input type="email" class="form-control" id="email" name="email" required />
+						</div>
+						<div class="mb-3">
+							<label for="message" class="form-label">Zpráva</label>
+							<textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary">Odeslat</button>
+					</form>
+				</div>
+			</div>
+
+			<!-- Google Calendar Embed -->
+			<div class="row justify-content-center mt-5">
+				<div class="col-md-8 col-lg-6">
+					<h5 class="text-center">Google Calendar</h5>
+					<!-- Calendar iFrame -->
+					<div class="ratio ratio-16x9">
+						<iframe
+							src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=Europe%2FPrague"
+							style="border: 0;" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+					</div>
+
+					<!-- Legenda -->
+					<div class="mt-4">
+						<h6>Legenda:</h6>
+						<div class="d-flex justify-content-between">
+							<div class="legend-item d-flex align-items-center">
+								<span class="badge bg-success me-2">zelená</span>
+								<span>Volné termíny</span>
+							</div>
+							<div class="legend-item d-flex align-items-center">
+								<span class="badge bg-warning me-2">žlutá</span>
+								<span>Speciální akce</span>
+							</div>
+							<div class="legend-item d-flex align-items-center">
+								<span class="badge bg-danger me-2">červená</span>
+								<span>Obsazené termíny</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+	<!-- Footer -->
+	<footer class="py-4 text-center">
+		<div class="container">
+			<p>&copy; 2025 Football & Sports Trainings. Všechna práva vyhrazena.</p>
+		</div>
+	</footer>
+
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Vlastní JS -->
+	<script src="scripts.js"></script>
+		<!-- Lightbox2 JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+</body>
+
+</html>
