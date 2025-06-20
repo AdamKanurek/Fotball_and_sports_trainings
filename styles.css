@@ -29,6 +29,25 @@
     font-weight: 600;
   }
   
+  /* Po rozbalení na mobilu centrum menu položek */
+@media (max-width: 991.98px) {
+  #navContent .navbar-nav {
+    text-align: center !important;
+  }
+  #navContent .nav-item {
+    width: 100%;
+  }
+  #navContent .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Vertikální centrování navbaru */
+#navbar .navbar-brand img {
+  vertical-align: middle;
+}
+  
   /* Hero sekce */
   .hero-section {
     background: linear-gradient(
