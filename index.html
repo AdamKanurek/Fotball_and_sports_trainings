@@ -30,7 +30,7 @@
 		<div class="container">
 			<a class="navbar-brand fw-bold text-dark" href="#">
 				<img class="me-2" src="assets/pruhlednypng.png" alt="Logo" width="48" height="48">
-				Football & Sports Trainings
+				<span class="d-none d-sm-inline">Football & Sports Trainings</span>
 			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
 				<span class="navbar-toggler-icon"></span>
@@ -51,32 +51,37 @@
 	<!-- Hero -->
 	<header id="hero" class="position-relative" style="height: 85vh; overflow: hidden;">
 		<!-- Video grid místo carouselu -->
-		<div class="h-100 w-100">
-			<div class="container-fluid h-100">
-				<div class="row h-100 g-0">
-					<div class="col-12 col-sm-6 col-lg-3 h-100">
-						<video class="w-100 h-100 object-fit-cover" autoplay loop muted playsinline>
+		<div class="h-100 w-100 m-0 p-0 overflow-hidden">
+			<div class="container-fluid h-100 p-0 m-0 overflow-hidden">
+				<div class="row h-100 g-0 m-0 overflow-hidden">
+					<div class="col-12 col-sm-6 col-lg-3 h-100 p-0 m-0">
+						<video class="w-100 h-100 object-fit-cover" style="display: block;" autoplay loop muted
+							playsinline>
 							<source src="assets/videos/Fotbal1.mp4" type="video/mp4">
 						</video>
 					</div>
-					<div class="col-12 col-sm-6 col-lg-3 h-100">
-						<video class="w-100 h-100 object-fit-cover" autoplay loop muted playsinline>
+					<div class="col-12 col-sm-6 col-lg-3 h-100 p-0 m-0">
+						<video class="w-100 h-100 object-fit-cover" style="display: block;" autoplay loop muted
+							playsinline>
 							<source src="assets/videos/Fotbal2.mp4" type="video/mp4">
 						</video>
 					</div>
-					<div class="col-12 col-sm-6 col-lg-3 h-100">
-						<video class="w-100 h-100 object-fit-cover" autoplay loop muted playsinline>
+					<div class="col-12 col-sm-6 col-lg-3 h-100 p-0 m-0">
+						<video class="w-100 h-100 object-fit-cover" style="display: block;" autoplay loop muted
+							playsinline>
 							<source src="assets/videos/Fotbal3.mp4" type="video/mp4">
 						</video>
 					</div>
-					<div class="col-12 col-sm-6 col-lg-3 h-100">
-						<video class="w-100 h-100 object-fit-cover" autoplay loop muted playsinline>
+					<div class="col-12 col-sm-6 col-lg-3 h-100 p-0 m-0">
+						<video class="w-100 h-100 object-fit-cover" style="display: block;" autoplay loop muted
+							playsinline>
 							<source src="assets/videos/Fotbal5.mp4" type="video/mp4">
 						</video>
 					</div>
 				</div>
 			</div>
 		</div>
+
 
 		<!-- Fullscreen tmavý overlay -->
 		<div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.7); z-index: 1;"></div>
@@ -109,21 +114,26 @@
 				<div class="col-lg-10">
 					<div class="card p-4 shadow-sm text-center">
 						<h4 class="mb-3 text-primary">Desatero mladého hráče</h4>
-						<ul class="list-unstyled row row-cols-1 row-cols-md-2 ps-5">
-							<li class="d-flex"><span class="me-2">⚽</span> Hraji fair play.</li>
-							<li class="d-flex"><span class="me-2">🧠</span> Poslouchám a učím se.</li>
-							<li class="d-flex"><span class="me-2">🤝</span> Respektuji trenéry i spoluhráče.</li>
-							<li class="d-flex"><span class="me-2">🔥</span> Dávám do tréninku maximum.</li>
-							<li class="d-flex"><span class="me-2">🎯</span> Mám cíl a pracuji na něm.</li>
-							<li class="d-flex"><span class="me-2">👟</span> Připravuji si výbavu a přicházím včas.</li>
-							<li class="d-flex"><span class="me-2">📚</span> Učím se nejen na hřišti.</li>
-							<li class="d-flex"><span class="me-2">🧼</span> Dbám na hygienu a pořádek.</li>
-							<li class="d-flex"><span class="me-2">💬</span> Mluvím s respektem.</li>
-							<li class="d-flex"><span class="me-2">😊</span> Bavím se hrou!</li>
-						</ul>
+						<div class="row text-start">
+							<div class="col-md-6 mb-2">
+								<p class="d-flex"><span class="me-2">⚽</span> Hraji fair play.</p>
+								<p class="d-flex"><span class="me-2">🧠</span> Poslouchám a učím se.</p>
+								<p class="d-flex"><span class="me-2">🤝</span> Respektuji trenéry i spoluhráče.</p>
+								<p class="d-flex"><span class="me-2">🔥</span> Dávám do tréninku maximum.</p>
+								<p class="d-flex"><span class="me-2">🎯</span> Mám cíl a pracuji na něm.</p>
+							</div>
+							<div class="col-md-6 mb-2">
+								<p class="d-flex"><span class="me-2">👟</span> Výbavu mám připravenou a chodím včas.</p>
+								<p class="d-flex"><span class="me-2">📚</span> Učím se nejen na hřišti.</p>
+								<p class="d-flex"><span class="me-2">🧼</span> Dbám na hygienu a pořádek.</p>
+								<p class="d-flex"><span class="me-2">💬</span> Mluvím s respektem.</p>
+								<p class="d-flex"><span class="me-2">😊</span> Bavím se hrou!</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
+
 		</div>
 	</section>
 
@@ -139,7 +149,7 @@
 				<!-- Video 1 -->
 				<div class="col-md-6 col-lg-3 mb-4">
 					<div class="portrait-video rounded shadow-sm overflow-hidden">
-						<video controls>
+						<video controls playsinline>
 							<source src="assets/videos/Fotbal1.mp4" type="video/mp4">
 							Váš prohlížeč nepodporuje přehrávání videa.
 						</video>
@@ -149,7 +159,7 @@
 				<!-- Video 2 -->
 				<div class="col-md-6 col-lg-3 mb-4">
 					<div class="portrait-video rounded shadow-sm overflow-hidden">
-						<video controls>
+						<video controls playsinline>
 							<source src="assets/videos/Fotbal3.mp4" type="video/mp4">
 							Váš prohlížeč nepodporuje přehrávání videa.
 						</video>
@@ -159,7 +169,7 @@
 				<!-- Video 3 -->
 				<div class="col-md-6 col-lg-3 mb-4">
 					<div class="portrait-video rounded shadow-sm overflow-hidden">
-						<video controls>
+						<video controls playsinline>
 							<source src="assets/videos/Fotbal4.mp4" type="video/mp4">
 							Váš prohlížeč nepodporuje přehrávání videa.
 						</video>
@@ -169,7 +179,7 @@
 				<!-- Video 4 -->
 				<div class="col-md-6 col-lg-3 mb-4">
 					<div class="portrait-video rounded shadow-sm overflow-hidden">
-						<video controls>
+						<video controls playsinline>
 							<source src="assets/videos/Fotbal5.mp4" type="video/mp4">
 							Váš prohlížeč nepodporuje přehrávání videa.
 						</video>
@@ -225,7 +235,8 @@
 				<!-- Hřiště 1 -->
 				<div class="col-md-6 col-lg-4">
 					<div class="card shadow-sm h-100">
-						<img src="assets/images/hriste.jpg" class="card-img-top rounded-top" alt="Hřiště - Sportovní areál">
+						<img src="assets/images/hriste.jpg" class="card-img-top rounded-top"
+							alt="Hřiště - Sportovní areál">
 						<div class="card-body">
 							<h5 class="card-title">FC Písek</h5>
 							<p class="card-text">Velké hřiště s přírodní trávou a plně vybavenými tréninkovými zónami.
@@ -238,7 +249,8 @@
 				<!-- Hřiště 2 -->
 				<div class="col-md-6 col-lg-4">
 					<div class="card shadow-sm h-100">
-						<img src="assets/images/hriste.jpg" class="card-img-top rounded-top" alt="Hřiště - Akademie Praha">
+						<img src="assets/images/hriste.jpg" class="card-img-top rounded-top"
+							alt="Hřiště - Akademie Praha">
 						<div class="card-body">
 							<h5 class="card-title">Multifunkční sportovní hříště</h5>
 							<p class="card-text">Velké hřiště s přírodní trávou a plně vybavenými tréninkovými zónami.
