@@ -7,6 +7,8 @@
 	<title>Sports & Football Academy</title>
 	<link rel="icon" type="image/svg+xml" href="assets/pruhlednypng.png">
 
+	<!-- FontAwesome-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 
@@ -48,20 +50,30 @@
 
 	<!-- Hero -->
 	<header id="hero" class="position-relative" style="height: 85vh; overflow: hidden;">
-		<!-- Carousel na pozadí -->
-		<div id="heroCarousel" class="carousel slide carousel-fade h-100" data-bs-ride="carousel">
-			<div class="carousel-inner h-100">
-				<div class="carousel-item active h-100">
-					<img src="assets/carousel-item1.jpg" class="d-block w-100 h-100" style="object-fit: cover;"
-						alt="Trénink 1">
-				</div>
-				<div class="carousel-item h-100">
-					<img src="assets/carousel-item2.jpg" class="d-block w-100 h-100" style="object-fit: cover;"
-						alt="Trénink 2">
-				</div>
-				<div class="carousel-item h-100">
-					<img src="assets/carousel-item3.jpg" class="d-block w-100 h-100" style="object-fit: cover;"
-						alt="Trénink 3">
+		<!-- Video grid místo carouselu -->
+		<div class="h-100 w-100">
+			<div class="container-fluid h-100">
+				<div class="row h-100 g-0">
+					<div class="col-12 col-sm-6 col-lg-3 h-100">
+						<video class="w-100 h-100 object-fit-cover" autoplay loop muted playsinline>
+							<source src="assets/videos/Fotbal1.mp4" type="video/mp4">
+						</video>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 h-100">
+						<video class="w-100 h-100 object-fit-cover" autoplay loop muted playsinline>
+							<source src="assets/videos/Fotbal2.mp4" type="video/mp4">
+						</video>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 h-100">
+						<video class="w-100 h-100 object-fit-cover" autoplay loop muted playsinline>
+							<source src="assets/videos/Fotbal3.mp4" type="video/mp4">
+						</video>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 h-100">
+						<video class="w-100 h-100 object-fit-cover" autoplay loop muted playsinline>
+							<source src="assets/videos/Fotbal5.mp4" type="video/mp4">
+						</video>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -71,11 +83,12 @@
 
 		<!-- Text přes overlay -->
 		<div class="position-absolute top-50 start-50 translate-middle text-center text-white" style="z-index: 2;">
-			<h1 class="display-4 fw-bold">Osobní fotbaloví trenéři pro děti</h1>
+			<h1 class="display-4 fw-bold">Fotbalové a sportovní tréninky pro děti</h1>
 			<p class="lead">Rozvíjíme potenciál mladých hráčů moderním a individuálním přístupem.</p>
-			<a href="#contact" class="btn btn-primary btn-lg mt-3">Rezervuj trénink</a>
+			<a href="#contact" class="btn btn-primary btn-lg mt-3">Přidej se k nám</a>
 		</div>
 	</header>
+
 
 
 	<!-- Sekce: Akademie -->
@@ -119,64 +132,13 @@
 		<div class="container">
 			<h2 class="text-center mb-5">Tréninky</h2>
 
-			<!-- Fotogalerie tréninků -->
-			<div class="row justify-content-center g-4">
-				<!-- Obrázek 1 -->
-				<div class="col-sm-6 col-md-4 col-lg-3">
-					<a href="assets/carousel-item1.jpg" data-lightbox="galerie" data-title="Trénink – technika">
-						<img src="assets/carousel-item1.jpg" loading="lazy" class="img-fluid rounded shadow-sm h-100"
-							alt="trénink 1">
-					</a>
-				</div>
-
-				<!-- Obrázek 2 -->
-				<div class="col-sm-6 col-md-4 col-lg-3">
-					<a href="assets/carousel-item2.jpg" data-lightbox="galerie" data-title="Trénink – rychlost">
-						<img src="assets/carousel-item2.jpg" loading="lazy" class="img-fluid rounded shadow-sm h-100"
-							alt="trénink 2">
-					</a>
-				</div>
-
-				<!-- Obrázek 3 -->
-				<div class="col-sm-6 col-md-4 col-lg-3">
-					<a href="assets/carousel-item3.jpg" data-lightbox="galerie" data-title="Trénink – týmová hra">
-						<img src="assets/carousel-item3.jpg" loading="lazy" class="img-fluid rounded shadow-sm h-100"
-							alt="trénink 3">
-					</a>
-				</div>
-
-				<!-- Obrázek 4 -->
-				<div class="col-sm-6 col-md-4 col-lg-3">
-					<a href="assets/carousel-item1.jpg" data-lightbox="galerie" data-title="Trénink – práce s míčem">
-						<img src="assets/carousel-item1.jpg" loading="lazy" class="img-fluid rounded shadow-sm h-100"
-							alt="trénink 4">
-					</a>
-				</div>
-
-				<!-- Obrázek 5 -->
-				<div class="col-sm-6 col-md-4 col-lg-3">
-					<a href="assets/carousel-item2.jpg" data-lightbox="galerie" data-title="Trénink – obratnost">
-						<img src="assets/carousel-item2.jpg" loading="lazy" class="img-fluid rounded shadow-sm h-100"
-							alt="trénink 5">
-					</a>
-				</div>
-
-				<!-- Obrázek 6 -->
-				<div class="col-sm-6 col-md-4 col-lg-3">
-					<a href="assets/carousel-item3.jpg" data-lightbox="galerie" data-title="Trénink – koncentrace">
-						<img src="assets/carousel-item3.jpg" loading="lazy" class="img-fluid rounded shadow-sm h-100"
-							alt="trénink 6">
-					</a>
-				</div>
-			</div>
-
 			<!-- Videa z tréninků -->
 			<div class="row justify-content-center mt-5">
 				<h5 class="text-center mb-4">Ukázky tréninků ve videích</h5>
 
 				<!-- Video 1 -->
 				<div class="col-md-6 col-lg-3 mb-4">
-					<div class="ratio ratio-16x9 rounded shadow-sm">
+					<div class="portrait-video rounded shadow-sm overflow-hidden">
 						<video controls>
 							<source src="assets/videos/Fotbal1.mp4" type="video/mp4">
 							Váš prohlížeč nepodporuje přehrávání videa.
@@ -186,17 +148,7 @@
 
 				<!-- Video 2 -->
 				<div class="col-md-6 col-lg-3 mb-4">
-					<div class="ratio ratio-16x9 rounded shadow-sm">
-						<video controls>
-							<source src="assets/videos/Fotbal2.mp4" type="video/mp4">
-							Váš prohlížeč nepodporuje přehrávání videa.
-						</video>
-					</div>
-				</div>
-
-				<!-- Video 3 -->
-				<div class="col-md-6 col-lg-3 mb-4">
-					<div class="ratio ratio-16x9 rounded shadow-sm">
+					<div class="portrait-video rounded shadow-sm overflow-hidden">
 						<video controls>
 							<source src="assets/videos/Fotbal3.mp4" type="video/mp4">
 							Váš prohlížeč nepodporuje přehrávání videa.
@@ -204,9 +156,9 @@
 					</div>
 				</div>
 
-				<!-- Video 4 -->
+				<!-- Video 3 -->
 				<div class="col-md-6 col-lg-3 mb-4">
-					<div class="ratio ratio-16x9 rounded shadow-sm">
+					<div class="portrait-video rounded shadow-sm overflow-hidden">
 						<video controls>
 							<source src="assets/videos/Fotbal4.mp4" type="video/mp4">
 							Váš prohlížeč nepodporuje přehrávání videa.
@@ -214,9 +166,9 @@
 					</div>
 				</div>
 
-				<!-- Video 5 -->
+				<!-- Video 4 -->
 				<div class="col-md-6 col-lg-3 mb-4">
-					<div class="ratio ratio-16x9 rounded shadow-sm">
+					<div class="portrait-video rounded shadow-sm overflow-hidden">
 						<video controls>
 							<source src="assets/videos/Fotbal5.mp4" type="video/mp4">
 							Váš prohlížeč nepodporuje přehrávání videa.
@@ -236,12 +188,12 @@
 				<!-- Trenér 1 -->
 				<div class="col-sm-6 col-md-4 col-lg-3">
 					<div class="card text-center h-100 shadow-sm">
-						<img src="assets/profilovka.jpg" class="card-img-top rounded-top" alt="trenér Jan Vacík">
+						<img src="assets/images/istockphoto-1726213979-612x612.jpg" class="card-img-top rounded-top"
+							alt="trenér Jan Vacík">
 						<div class="card-body">
 							<h5 class="card-title mb-1">Jan Vacík</h5>
-							<p class="text-muted small mb-2">Hlavní trenér, FAČR B licence</p>
-							<p class="card-text">10+ let zkušeností s trénováním mládeže, specializace na individuální
-								rozvoj.</p>
+							<p class="text-muted small mb-2">Hlavní trenér FC Písek U6</p>
+							<p class="card-text">Trenér příměstských fotbalových táborů.</p>
 						</div>
 					</div>
 				</div>
@@ -249,12 +201,12 @@
 				<!-- Trenér 2 -->
 				<div class="col-sm-6 col-md-4 col-lg-3">
 					<div class="card text-center h-100 shadow-sm">
-						<img src="assets/profilovka.jpg" class="card-img-top rounded-top" alt="trenér Petr Novák">
+						<img src="assets/images/istockphoto-1726213979-612x612.jpg" class="card-img-top rounded-top"
+							alt="trenér Petr Novák">
 						<div class="card-body">
-							<h5 class="card-title mb-1">Petr Novák</h5>
-							<p class="text-muted small mb-2">Asistent, mentální kouč</p>
-							<p class="card-text">Zaměřuje se na práci s psychikou, motivací a komunikací mladých hráčů.
-							</p>
+							<h5 class="card-title mb-1">Matouš Kačírek</h5>
+							<p class="text-muted small mb-2">Hlavní trenér FC Písek U10</p>
+							<p class="card-text">Trenér příměstských fotbalových táborů.</p>
 						</div>
 					</div>
 				</div>
@@ -273,7 +225,7 @@
 				<!-- Hřiště 1 -->
 				<div class="col-md-6 col-lg-4">
 					<div class="card shadow-sm h-100">
-						<img src="assets/hriste.jpg" class="card-img-top rounded-top" alt="Hřiště - Sportovní areál">
+						<img src="assets/images/hriste.jpg" class="card-img-top rounded-top" alt="Hřiště - Sportovní areál">
 						<div class="card-body">
 							<h5 class="card-title">FC Písek</h5>
 							<p class="card-text">Velké hřiště s přírodní trávou a plně vybavenými tréninkovými zónami.
@@ -286,12 +238,12 @@
 				<!-- Hřiště 2 -->
 				<div class="col-md-6 col-lg-4">
 					<div class="card shadow-sm h-100">
-						<img src="assets/hriste.jpg" class="card-img-top rounded-top" alt="Hřiště - Akademie Praha">
+						<img src="assets/images/hriste.jpg" class="card-img-top rounded-top" alt="Hřiště - Akademie Praha">
 						<div class="card-body">
-							<h5 class="card-title">TJ Hradiště</h5>
+							<h5 class="card-title">Multifunkční sportovní hříště</h5>
 							<p class="card-text">Velké hřiště s přírodní trávou a plně vybavenými tréninkovými zónami.
 							</p>
-							<p class="text-muted small">Adresa: Na Rozhledně 307/21, 397 01 Písek 1-Hradiště</p>
+							<p class="text-muted small">Adresa: Topolová 41, Nový Dvůr, 397 01 Písek</p>
 						</div>
 					</div>
 				</div>
@@ -313,10 +265,9 @@
 					<div class="col-md-8 col-lg-6 mt-4 mt-md-0">
 						<div class="ratio ratio-16x9">
 							<iframe
-								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4302.392878631326!2d14.1251189!3d49.2998516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b4f99fc529089%3A0x51c9a9a4078029e4!2zVEogSHJhZGnFoXTEmw!5e1!3m2!1scs!2scz!4v1746384496128!5m2!1scs!2scz"
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d538.1220623278225!2d14.194098936389238!3d49.270250559683184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b504de72e4f39%3A0x160e30bd488cf90a!2zRMSbdHNrw6kgaMWZacWhdMSb!5e1!3m2!1scs!2scz!4v1750415286379!5m2!1scs!2scz"
 								width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-								referrerpolicy="no-referrer-when-downgrade">
-							</iframe>
+								referrerpolicy="no-referrer-when-downgrade"></iframe>
 						</div>
 					</div>
 				</div>
@@ -334,10 +285,8 @@
 				<div class="col-md-4">
 					<div class="card text-center shadow-sm h-100">
 						<div class="card-body">
-							<h5 class="card-title mb-4">1 osoba</h5>
+							<h5 class="card-title mb-4">1 hráč</h5>
 							<p class="display-6 fw-bold text-primary">500 Kč</p>
-							<p class="text-muted">Jednorázová lekce – 60 minut</p>
-							<a href="#contact" class="btn btn-primary mt-3">Rezervovat</a>
 						</div>
 					</div>
 				</div>
@@ -346,10 +295,8 @@
 				<div class="col-md-4">
 					<div class="card text-center shadow-sm h-100 border-primary border-2">
 						<div class="card-body">
-							<h5 class="card-title mb-4">2 a více osob</h5>
-							<p class="display-6 fw-bold text-primary">1000 Kč</p>
-							<p class="text-muted">Cenově výhodné</p>
-							<a href="#contact" class="btn btn-primary mt-3">Rezervovat</a>
+							<h5 class="card-title mb-4">2 hráči</h5>
+							<p class="display-6 fw-bold text-primary">400 Kč</p>
 						</div>
 					</div>
 				</div>
@@ -358,82 +305,57 @@
 				<div class="col-md-4">
 					<div class="card text-center shadow-sm h-100">
 						<div class="card-body">
-							<h5 class="card-title mb-4">Individuální domluva</h5>
-							<p class="display-6 fw-bold text-primary">?</p>
-							<p class="text-muted">Cenově výhodné – platnost 3 měsíce</p>
-							<a href="#contact" class="btn btn-primary mt-3">Rezervovat</a>
+							<h5 class="card-title mb-4">3 hráči</h5>
+							<p class="display-6 fw-bold text-primary">300 Kč</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<h5 class="text-center mt-4">Cena je za jednoho hráče</h2>
 	</section>
 
 
 	<!-- Sekce: Kontakt -->
 	<section id="contact" class="bg-light">
 		<div class="container">
-			<h2 class="text-center mb-5">Kontaktujte mě</h2>
+			<h2 class="text-center mb-5">Kontakty</h2>
 
-			<div class="row justify-content-center">
-				<div class="col-md-8 col-lg-6">
-					<!-- Formulář -->
-					<form action="https://formspree.io/f/xblognwg" method="POST">
-						<div class="mb-3">
-							<label for="name" class="form-label">Jméno</label>
-							<input type="text" class="form-control" id="name" name="name" required />
-						</div>
-						<div class="mb-3">
-							<label for="phone" class="form-label">Tel. číslo</label>
-							<input type="phone" class="form-control" id="phone" name="phone" required />
-						</div>
-						<div class="mb-3">
-							<label for="email" class="form-label">E-mail</label>
-							<input type="email" class="form-control" id="email" name="email" required />
-						</div>
-						<div class="mb-3">
-							<label for="message" class="form-label">Zpráva</label>
-							<textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-						</div>
-						<button type="submit" class="btn btn-primary">Odeslat</button>
-					</form>
+			<div class="row align-items-center text-center">
+
+				<!-- Osoba 1 -->
+				<div class="col-12 col-md-4">
+					<h5>Jan Vacík</h5>
+					<p><a href="tel:+420721065680" class="text-decoration-none text-dark">📞 +420 721 065 680</a></p>
 				</div>
+
+				<!-- Sociální sítě -->
+				<div class="col-12 col-md-4 mb-4 mb-md-0">
+					<div class="d-flex justify-content-center gap-4">
+						<a href="https://www.instagram.com/tvoje_stranka" target="_blank" class="text-dark fs-1">
+							<i class="fab fa-instagram"></i>
+						</a>
+						<a href="https://www.facebook.com/tvoje_stranka" target="_blank" class="text-dark fs-1">
+							<i class="fab fa-facebook"></i>
+						</a>
+					</div>
+				</div>
+
+				<!-- Osoba 2 -->
+				<div class="col-12 col-md-4">
+					<h5>Matouš Kačírek</h5>
+					<p><a href="tel:+420608817611" class="text-decoration-none text-dark">📞 +420 608 817 611</a></p>
+				</div>
+
 			</div>
 
-			<!-- Google Calendar Embed -->
-			<div class="row justify-content-center mt-5">
-				<div class="col-md-8 col-lg-6">
-					<h5 class="text-center">Google Calendar</h5>
-					<!-- Calendar iFrame -->
-					<div class="ratio ratio-16x9">
-						<iframe
-							src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=Europe%2FPrague"
-							style="border: 0;" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-					</div>
-
-					<!-- Legenda -->
-					<div class="mt-4">
-						<h6>Legenda:</h6>
-						<div class="d-flex justify-content-between">
-							<div class="legend-item d-flex align-items-center">
-								<span class="badge bg-success me-2">zelená</span>
-								<span>Volné termíny</span>
-							</div>
-							<div class="legend-item d-flex align-items-center">
-								<span class="badge bg-warning me-2">žlutá</span>
-								<span>Speciální akce</span>
-							</div>
-							<div class="legend-item d-flex align-items-center">
-								<span class="badge bg-danger me-2">červená</span>
-								<span>Obsazené termíny</span>
-							</div>
-						</div>
-					</div>
-
-				</div>
+			<div class="my-5 border border-secondary text-center" style="height: 400px; background-color: #f8f9fa;">
+				<h1>Tady pak bude instagram widget</h1>
 			</div>
+
 
 		</div>
+
 	</section>
 
 
@@ -448,7 +370,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	<!-- Vlastní JS -->
 	<script src="scripts.js"></script>
-		<!-- Lightbox2 JS -->
+	<!-- Lightbox2 JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 
 </body>
