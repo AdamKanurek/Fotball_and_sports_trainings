@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  // Scroll reveal efekt
+  // Scroll reveal effect
   const sections = document.querySelectorAll('section');
   const revealOnScroll = () => {
     const trigger = window.innerHeight * 0.85;
@@ -18,5 +18,5 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   window.addEventListener('scroll', revealOnScroll);
-  revealOnScroll(); // spustit i při načtení
+  revealOnScroll();
 });
