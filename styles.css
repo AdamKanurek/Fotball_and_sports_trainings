@@ -46,6 +46,18 @@ body {
   }
 }
 
+/* Styl pro název v navigaci */
+.site-title {
+  font-size: 1.25rem; /* výchozí pro větší obrazovky */
+}
+
+/* Zmenšit na mobilech */
+@media (max-width: 576px) {
+  .site-title {
+    font-size: 0.85rem;
+  }
+}
+
 /* Vertikální centrování navbaru */
 #navbar .navbar-brand img {
   vertical-align: middle;
@@ -200,3 +212,4 @@ section {
   /* nebo 'contain', pokud nechceš ořezávat */
   border-radius: inherit;
 }
+
